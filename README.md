@@ -42,10 +42,12 @@ $$
 ![EV Logic 1](images/ev_logic_1.png)
 ![EV Logic 2](images/ev_logic_2.png)
 
-* **Duty Cycle Decoder:** Measures $T_{on}$ and $T_{period}$ to calculate available grid power.
-* **Current_Calculation:** Implements the IEC 61851 mapping formula:
-    * $10\% \le D \le 85\% \rightarrow I = D \times 0.6$
-    * $85\% < D \le 96\% \rightarrow I = (D - 64) \times 2.5$
+- **Duty Cycle Decoder:** Measures `T_on` and `T_period` to calculate available grid power.
+
+- **Current Calculation:** Implements the IEC 61851 control pilot duty-cycle mapping:
+  - `10% ≤ D ≤ 85%  →  I = 0.6 × D`
+  - `85% < D ≤ 96% →  I = 2.5 × (D − 64)`
+
 
 ## 🚀 How to Run
 1.  **Requirements:** MATLAB R2023b (or newer), Simulink, Simscape Electrical, Stateflow.
@@ -80,6 +82,7 @@ Open to discussions on implementing **ISO 15118 (Plug & Charge)** or **V2G (Vehi
 
 ---
 *Created by SHAKEB SARWAR - Electrical Engineering Student, RGIPT*
+
 
 
 
