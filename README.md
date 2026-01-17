@@ -34,7 +34,10 @@ The charger controller manages the handshake and grid limits. It uses a **Track-
 ### 2. The EV Controller (Vehicle)
 The vehicle logic decodes the incoming signal and determines the final charging current ($I_{max}$).
 
-$$I_{max} = \min(I_{Grid\_Available}, I_{Cable\_Rating})$$
+$$
+I_{\max} = \min\left(I_{\text{Grid, available}},\; I_{\text{Cable, rating}}\right)
+$$
+
 
 ![EV Logic 1](images/ev_logic_1.png)
 ![EV Logic 2](images/ev_logic_2.png)
@@ -77,5 +80,6 @@ Open to discussions on implementing **ISO 15118 (Plug & Charge)** or **V2G (Vehi
 
 ---
 *Created by SHAKEB SARWAR - Electrical Engineering Student, RGIPT*
+
 
 
