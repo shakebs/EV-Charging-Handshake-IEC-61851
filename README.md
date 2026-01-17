@@ -1,4 +1,4 @@
-# IEC 61851-1 EV Charging Station Simulation (Simulink/Stateflow)
+# IEC 61851-1/IS 17017 EV Charging Station Simulation (Simulink/Stateflow)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-Simulink-blue) ![Status](https://img.shields.io/badge/Status-Completed-success)
 
@@ -77,4 +77,5 @@ Open to discussions on implementing **ISO 15118 (Plug & Charge)** or **V2G (Vehi
 
 ---
 *Created by SHAKEB SARWAR - Electrical Engineering Student, RGIPT*
+
 
