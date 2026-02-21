@@ -7,7 +7,7 @@ A high-fidelity "Digital Twin" simulation of an Electric Vehicle Supply Equipmen
 
 This project models the complete physical layer and communication protocol, including Safety Logic, Proximity Detection, and Dynamic Grid Load Balancing.
 
-*Here's a brief demo of this Simulation.*
+> 🎥 **Here is a brief video demonstration of this Simulation:**
 [![Watch the Simulation Demo](images/thumbnail.png)](https://youtu.be/m4KEkTv8oNk)
 
 
