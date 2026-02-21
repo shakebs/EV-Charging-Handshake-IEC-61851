@@ -7,8 +7,8 @@ A high-fidelity "Digital Twin" simulation of an Electric Vehicle Supply Equipmen
 
 This project models the complete physical layer and communication protocol, including Safety Logic, Proximity Detection, and Dynamic Grid Load Balancing.
 
-![System Overview](images/system_overview.png)
-*Figure 1: Complete System Model including EVSE, Grid Input, Cable Simulation, and Vehicle On-Board Charger Logic.*
+[![EV Charging Handshake Demo](https://img.youtube.com/vi/m4KEkTv8oNk/maxresdefault.jpg)](https://www.youtube.com/watch?v=m4KEkTv8oNk)
+*Figure 1: Video Demonstration of the Complete System Model (Click the image to play).*
 
 ## 🔋 Project Overview
 The simulation demonstrates the full charging sequence (States A through C), fault handling, and current negotiation. It addresses complex simulation challenges such as **Algebraic Loops** in feedback systems and **High-Precision PWM Duty Cycle Decoding** for communication.
