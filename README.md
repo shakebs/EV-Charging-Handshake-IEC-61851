@@ -78,4 +78,4 @@ Open to discussions on implementing **ISO 15118 (Plug & Charge)** or **V2G (Vehi
 
 **Author**
 * **Shakeb Sarwar** - *Final Year Electrical Engineering, RGIPT*
-* [Connect with me on LinkedIn](www.linkedin.com/in/shakeb-sarwar)
+* [Connect with me on LinkedIn](https://www.linkedin.com/in/shakeb-sarwar)
