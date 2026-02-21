@@ -76,8 +76,6 @@ The scope below shows a successful charging session:
 ## 🤝 Contributing
 Open to discussions on implementing **ISO 15118 (Plug & Charge)** or **V2G (Vehicle-to-Grid)** features.
 
----
-*Created by SHAKEB SARWAR - Electrical Engineering Student, RGIPT*
-#   E V - C h a r g i n g - H a n d s h a k e - I E C - 6 1 8 5 1 
- 
- 
+**Author**
+* **Shakeb Sarwar** - *Final Year Electrical Engineering, RGIPT*
+* [Connect with me on LinkedIn](www.linkedin.com/in/shakeb-sarwar)
