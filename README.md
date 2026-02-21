@@ -33,19 +33,21 @@ The charger controller manages the handshake and grid limits. It uses a **Track-
 * **Safety_Check:** Continuously verifies the integrity of the ground connection and vehicle circuitry.
 
 ### 2. The EV Controller (Vehicle)
-The vehicle logic decodes the incoming signal and determines the final charging current ($I_{max}$).
+The vehicle logic decodes the incoming signal and determines the final charging current ($I_{\text{max}}$).
 
 $$
-I_{max} = \min(I_{Grid\_Available}, I_{Cable\_Rating})
+I_{\text{max}} = \min(I_{\text{Grid\_Available}}, I_{\text{Cable\_Rating}})
 $$
 
 ![EV Logic 1](images/ev_logic_1.png)
 ![EV Logic 2](images/ev_logic_2.png)
 
-* **Duty Cycle Decoder:** Measures $T_{on}$ and $T_{period}$ to calculate available grid power.
+* **Duty Cycle Decoder:** Measures $T_{\text{on}}$ and $T_{\text{period}}$ to calculate available grid power.
 * **Current_Calculation:** Implements the IEC 61851 mapping formula:
-    * $10\% \leq D \leq 85\% \rightarrow I = D \times 0.6$
-    * $85\% < D \leq 96\% \rightarrow I = (D - 64) \times 2.5$
+
+  $$10\% \leq D \leq 85\% \implies I = D \times 0.6$$
+
+  $$85\% < D \leq 96\% \implies I = (D - 64) \times 2.5$$
 
 ## 🚀 How to Run
 1.  **Requirements:** MATLAB R2023b (or newer), Simulink, Simscape Electrical, Stateflow.
