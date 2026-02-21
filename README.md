@@ -35,14 +35,17 @@ The charger controller manages the handshake and grid limits. It uses a **Track-
 ### 2. The EV Controller (Vehicle)
 The vehicle logic decodes the incoming signal and determines the final charging current ($I_{max}$).
 
-$$I_{max} = \min(I_{Grid\_Available}, I_{Cable\_Rating})$$
+$$
+I_{max} = \min(I_{Grid\_Available}, I_{Cable\_Rating})
+$$
 
-![EV Logic](images/ev_logic_1.png)(images/ev_logic_2.png)
+![EV Logic 1](images/ev_logic_1.png)
+![EV Logic 2](images/ev_logic_2.png)
 
 * **Duty Cycle Decoder:** Measures $T_{on}$ and $T_{period}$ to calculate available grid power.
 * **Current_Calculation:** Implements the IEC 61851 mapping formula:
-    * $10\% \le D \le 85\% \rightarrow I = D \times 0.6$
-    * $85\% < D \le 96\% \rightarrow I = (D - 64) \times 2.5$
+    * $10\% \leq D \leq 85\% \rightarrow I = D \times 0.6$
+    * $85\% < D \leq 96\% \rightarrow I = (D - 64) \times 2.5$
 
 ## 🚀 How to Run
 1.  **Requirements:** MATLAB R2023b (or newer), Simulink, Simscape Electrical, Stateflow.
@@ -76,6 +79,7 @@ The scope below shows a successful charging session:
 Open to discussions on implementing **ISO 15118 (Plug & Charge)** or **V2G (Vehicle-to-Grid)** features.
 
 ---
-*Created by SHAKEB SARWAR - Electrical Engineering Student, RGIPT*#   E V - C h a r g i n g - H a n d s h a k e - I E C - 6 1 8 5 1 
+*Created by SHAKEB SARWAR - Electrical Engineering Student, RGIPT*
+#   E V - C h a r g i n g - H a n d s h a k e - I E C - 6 1 8 5 1 
  
  
